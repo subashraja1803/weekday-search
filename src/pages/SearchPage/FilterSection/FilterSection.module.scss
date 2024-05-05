@@ -1,0 +1,20 @@
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  .optionContainer {
+    min-width: 10rem;
+    height: 4rem;
+    position: relative;
+    p {
+      top: -1.4rem;
+      position: absolute;
+    }
+  }
+  .textField {
+    :global([class*="MuiInputBase-root"]) {
+      height: 3.8rem;
+    }
+  }
+}
