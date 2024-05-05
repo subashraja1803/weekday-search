@@ -1,6 +1,10 @@
-# Install Dependancies
+## Install Dependancies
 
-move to the project folder in the terminal and run ### `npm install`
+Move to the project folder in the terminal and run:
+
+### `npm install`
+
+This will install all the required dependancies
 
 ## Start Project
 
