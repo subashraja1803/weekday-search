@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./JobCard.module.scss";
 import { Avatar, Box, Button } from "@mui/material";
-import { capitalizeFirstLetter } from "../../api/Utils/Utils";
+import { capitalizeFirstLetter } from "../../Utils/Utils";
 import { CURRENCY_UNICODE_MAP } from "../../ConstantData/staticData";
 
 function JobCard({ jobDetail }) {

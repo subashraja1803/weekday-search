@@ -5,8 +5,16 @@ export const SearchJobsActionHandlers = {
     type: SEARCH_JOBS_ACTIONS.SET_CARDS_DATA,
     payload,
   }),
+  appendCardsData: (payload) => ({
+    type: SEARCH_JOBS_ACTIONS.APPEND_CARDS_DATA,
+    payload,
+  }),
   setFilters: (payload) => ({
     type: SEARCH_JOBS_ACTIONS.SET_FILTERS,
+    payload,
+  }),
+  setOffset: (payload) => ({
+    type: SEARCH_JOBS_ACTIONS.SET_OFFSET,
     payload,
   }),
 };

@@ -15,6 +15,7 @@ function Experience({ filters, setFilters }) {
       {experience?.length ? <p>Experience</p> : <></>}
       <ReactSelect
         name="experience"
+        isClearable
         options={experienceOptions}
         className="basic-single"
         classNamePrefix="select"

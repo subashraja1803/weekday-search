@@ -6,9 +6,10 @@ import { SearchJobsActionHandlers } from "../../store/SearchJobs.actionHandlers"
 import { connect } from "react-redux";
 import FilterSection from "./FilterSection";
 
-function SearchPage({ setCardsData }) {
+function SearchPage({ setCardsData, offset }) {
   useEffect(() => {
-    fetchData(9, 0).then((result) => setCardsData(result));
+    document.title = "Search Jobs";
+    fetchData(12, offset).then((result) => setCardsData(result));
   }, []);
   return (
     <div className={styles.searchPage}>
@@ -18,7 +19,9 @@ function SearchPage({ setCardsData }) {
   );
 }
 
-const mapStateToProps = ({ searchJobsStore }) => ({});
+const mapStateToProps = ({ searchPageStore }) => ({
+  offset: searchPageStore.offset,
+});
 
 const mapDispatchToProps = (dispatch) => ({
   setCardsData: (payload) =>

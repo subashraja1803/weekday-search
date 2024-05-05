@@ -324,16 +324,16 @@ export const roleOptions = [
 
 export const workSettingOptions = [
   {
-    value: "Remote",
+    value: "remote",
     label: "Remote",
   },
+  // {
+  //   value: "Hybrid",
+  //   label: "Hybrid",
+  // },
   {
-    value: "Hybrid",
-    label: "Hybrid",
-  },
-  {
-    value: "In-office",
-    label: "In-office",
+    value: "on-site",
+    label: "On-Site",
   },
 ];
 

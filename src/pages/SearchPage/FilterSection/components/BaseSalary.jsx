@@ -15,6 +15,7 @@ function BaseSalary({ filters, setFilters }) {
       {baseSalary?.length ? <p>Base Salary</p> : <></>}
       <ReactSelect
         name="baseSalary"
+        isClearable
         options={baseSalaryOptions}
         className="basic-single"
         classNamePrefix="select"
